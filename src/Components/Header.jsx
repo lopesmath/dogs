@@ -10,15 +10,15 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
-        <Link className={styles.logo} to="/">
+        <Link className={styles.logo} to="/dogs/">
           <DogsSvg />
         </Link>
         {data ? (
-          <Link className={styles.login} to="/conta">
+          <Link className={styles.login} to="/dogs/conta">
             {data.nome}
           </Link>
         ) : (
-          <Link className={styles.login} to="/login">
+          <Link className={styles.login} to="/dogs/login">
             Login / Criar
           </Link>
         )}

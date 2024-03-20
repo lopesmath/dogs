@@ -8,10 +8,11 @@ const UserHeader = () => {
   const location = useLocation()
 
   useEffect(() => {
-    if (location.pathname === '/conta') setTitle('Minhas Fotos')
-    else if (location.pathname === '/conta/estatisticas')
+    if (location.pathname === '/dogs/conta') setTitle('Minhas Fotos')
+    else if (location.pathname === '/dogs/conta/estatisticas')
       setTitle('Estatísticas')
-    else if (location.pathname === '/conta/postar') setTitle('Crie um post')
+    else if (location.pathname === '/dogs/conta/postar')
+      setTitle('Crie um post')
     else setTitle('null')
   }, [location])
 
